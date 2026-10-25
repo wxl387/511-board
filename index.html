@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow,noarchive">
+<meta name="referrer" content="no-referrer">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; connect-src 'self'; base-uri 'none'; form-action 'none'">
+<title>511 board</title>
+<link rel="icon" href="data:,">
+<link rel="stylesheet" href="board.css">
+</head>
+<body>
+<div id="lock" class="login" hidden>
+  <h1>511 board</h1>
+  <div class="sub">Enter the passcode to open the board.</div>
+  <form id="lockf" autocomplete="off">
+    <label for="pc">Passcode</label>
+    <input id="pc" type="password" autocomplete="current-password" autocapitalize="characters" spellcheck="false" required>
+    <label class="rem"><input id="rem" type="checkbox" checked> Remember on this device</label>
+    <button id="unlock">Open</button>
+    <div id="err" class="err" role="alert"></div>
+  </form>
+</div>
+<div id="app" hidden>
+  <header><div class="hb"><div class="brand">511 <span>board</span></div><nav id="nav" aria-label="Pages"></nav>
+    <div class="who"><span id="upd"></span> <button id="refb" class="ghost" type="button" title="Look for a newer copy now">Refresh</button> <button id="lockb" class="ghost" type="button">Lock</button></div></div></header>
+  <main>
+    <div id="stale" class="msg warn" role="status" hidden></div>
+    <h1 id="pt"></h1><div id="ps" class="sub"></div>
+    <div id="page"></div>
+  </main>
+</div>
+<noscript><div class="login"><h1>511 board</h1><p>This page needs JavaScript.</p></div></noscript>
+<script src="chart.js"></script>
+<script src="floor.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
